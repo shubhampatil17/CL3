@@ -1,0 +1,22 @@
+import unittest
+
+'''class Addition:
+    def __init__(self):
+        print "object created"
+        
+    def checksum(self,a,b):
+        return a+b;'''
+    
+class Testing(unittest.TestCase):
+    def positiveTesting(self):
+        #addObj = Addition()
+        self.assertEquals(5+4, 9, "Test Passed !")
+    
+    def negativeTesting(self):
+        #addObj = Addition()
+        self.assertEquals(2+4, 9, "Test Failed !")
+        
+    
+if __name__ == "__main__":
+    unittest.main()
+    

@@ -1,0 +1,24 @@
+import unittest
+
+class BinarySearch:
+    def __init__(self):
+        print "Object Created !"
+        
+    def iterative(self, array, key):
+        left = 0;
+        right = len(array)-1;
+        while left <= right:
+            
+            mid = (left + right)/2
+            
+            if ()
+    
+    def recursive(self, array, left, right):
+        print "hello"
+        
+class Testing(unittest.TestCase):
+    def test_positive(self):
+        print "running test"
+        
+if __name__ == "__main__":
+    unittest.main()

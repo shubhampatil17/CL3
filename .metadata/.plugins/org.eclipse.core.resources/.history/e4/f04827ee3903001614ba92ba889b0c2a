@@ -1,0 +1,61 @@
+import unittest
+
+class BinarySearch:        
+    def iterative(self, array, left, right, key):
+        while left <= right:
+            
+            mid = left + (right - left)/2
+            
+            if array[mid] == key:
+                return True
+
+            elif array[mid] > key:
+                right = mid-1
+            
+            else:
+                left = mid+1
+                
+            if left > right:
+                return False
+    
+    def recursive(self, array, left, right, key):
+        
+        if left > right:
+            return False
+        
+        mid = left + (right - left)/2
+        
+        if array[mid]==key:
+            return True
+        
+        elif array[mid] > key:
+            ret = self.recursive(array, left, mid-1, key)
+            return ret
+        
+        else:
+            ret = self.recursive(array, mid+1, right, key)
+            return ret
+            
+class Testing(unittest.TestCase):
+    def test_iterative(self):
+        array = [2,4,6,9,7,10,15,20]  
+        array = sorted(array)
+        self.assertEqual(BinarySearch().iterative(array, 
+                                                  0, 
+                                                  len(array)-1, 9), 
+                                                  True)
+        
+    def test_recursive(self):
+        array = [2,4,6,10,9,7,15,20]
+        array = sorted(array)
+        self.assertEqual(BinarySearch().recursive(array, 
+                                                  0, 
+                                                  len(array)-1, 9), 
+                                                  True)
+        
+    def test_negative(self):
+        array = [2,5,8,10]
+        self.assertTrue(BinarySearch().recursive(array, 0, len(array)-1, 9), "Test completed !")
+        
+if __name__ == "__main__":
+    unittest.main()

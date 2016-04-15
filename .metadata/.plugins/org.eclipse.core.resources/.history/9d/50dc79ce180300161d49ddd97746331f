@@ -1,0 +1,19 @@
+import unittest
+
+class Addition:        
+    def checksum(self,a,b):
+        print "called"
+        return a+b
+    
+class Testing(unittest.TestCase):
+    def positiveTesting(self):
+        #addObj = Addition()
+        self.assertEqual(Addition().checksum(5, 4), 9)
+    
+    def negativeTesting(self):
+        #addObj = Addition()
+        self.assertEqual(Addition().checksum(2, 4), 9)
+        
+    
+if __name__ == "__main__":
+    unittest.main()

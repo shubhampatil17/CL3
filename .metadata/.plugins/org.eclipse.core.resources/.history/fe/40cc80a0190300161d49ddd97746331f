@@ -1,0 +1,7 @@
+import unittest
+
+class BinarySearch:
+    def __init__(self):
+        print "Object Created !"
+        
+class Testing(unittest.TestCase):

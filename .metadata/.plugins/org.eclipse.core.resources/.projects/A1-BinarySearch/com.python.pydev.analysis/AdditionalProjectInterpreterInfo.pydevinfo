@@ -1,0 +1,22 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/home/shubham/workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/A1-BinarySearch/com.python.pydev.analysis/v2_indexcache
+binsearch|1460746507000000000|/home/shubham/workspace/A1-BinarySearch/binsearch.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+2=BinarySearch
+1=binsearch
+3=Testing
+-- END DICTIONARY
+-- START TREE 1
+2
+bin|1|BinarySearch!9@
+tes|1|Testing!9@
+-- END TREE
+-- START TREE 2
+3
+ite|1|iterative!2&10@
+rec|1|recursive!2&10@
+tes|2|test_iterative!3&10@test_recursive!3&10@
+-- END TREE

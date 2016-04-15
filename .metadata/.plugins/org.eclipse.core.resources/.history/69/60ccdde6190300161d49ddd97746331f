@@ -1,0 +1,12 @@
+import unittest
+
+class BinarySearch:
+    def __init__(self):
+        print "Object Created !"
+        
+class Testing(unittest.TestCase):
+    def test_positive(self):
+        print "running test"
+        
+if __name__ == "__main__":
+    unittest.main()

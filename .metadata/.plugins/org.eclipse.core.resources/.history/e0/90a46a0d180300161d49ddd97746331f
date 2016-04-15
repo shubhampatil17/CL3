@@ -1,0 +1,17 @@
+import unittest
+
+'''class Addition:        
+    def checksum(self,a,b):
+        return a+b;'''
+    
+class Testing(unittest.TestCase):
+    def positiveTesting(self):
+        #addObj = Addition()
+        self.assertEqual(5+4, 9)
+    
+    def negativeTesting(self):
+        #addObj = Addition()
+        self.assertEquals(2+4, 9)
+        
+    
+unittest.main()

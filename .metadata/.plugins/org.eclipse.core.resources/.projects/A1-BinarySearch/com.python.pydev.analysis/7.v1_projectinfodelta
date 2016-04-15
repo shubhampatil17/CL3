@@ -1,0 +1,10 @@
+INSTUPbinsearch
+/home/shubham/workspace/A1-BinarySearch/binsearch.py
+INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&1|5|2|0&&2|6|2|5&&2|7|2|5
+BinarySearch=1
+test_iterative=6
+iterative=3
+test_recursive=7
+binsearch=2
+recursive=4
+Testing=5
