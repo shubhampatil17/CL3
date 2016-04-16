@@ -1,0 +1,40 @@
+import xml.etree.ElementTree as et
+    
+
+class QuickSort:
+    def __init__(self):
+        self.array = self.parser()
+    
+    def qsort(self,left,right):
+        if left<right:
+            splitPoint = self.partition(left, right)
+        
+        #introduce concurrency here
+        self.qsort(left, splitPoint-1)
+        self.qsort(splitPoint+1, right)
+        
+    def parser(self):
+        #parsing from the xml file
+        tree = et.parse("array.xml")
+        root = tree.getroot()
+        array = []
+               
+        for child in root:
+            array.append(int(child.text))
+
+        return array
+    
+    def partition(self, left, right):
+        
+        pivot = self.array[left + (right - left)/2]
+        '''taking middle element as pivot
+        can also be the first, the last or 
+        the median of first, last and middle'''
+        
+        while left < right:
+            
+        
+        
+        
+    
+    

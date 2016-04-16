@@ -40,6 +40,8 @@ class BinarySearch:
 class Testing(unittest.TestCase):
     def test_iterative(self):
         array = [2,4,6,9,7,10,15,20]  
+        #array = [0]*1000
+        #array[255]=1
         array = sorted(array) #Write your own sort function here
         startTime = time.time()
         self.assertEqual(BinarySearch().iterative(array, 
@@ -52,6 +54,8 @@ class Testing(unittest.TestCase):
         
     def test_recursive(self):
         array = [2,4,6,10,9,7,15,20]
+        #array = [0]*1000
+        #array[255]=1
         array = sorted(array) #Write your own sort function here
         startTime = time.time()
         self.assertEqual(BinarySearch().recursive(array, 

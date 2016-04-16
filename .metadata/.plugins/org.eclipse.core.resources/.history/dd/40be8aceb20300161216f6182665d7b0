@@ -1,0 +1,14 @@
+import xml.etree.ElementTree as et
+tree = et.parse("array.xml")
+root = tree.getroot()
+
+array = []
+
+for child in root:
+    array.append(int(child.text))
+    
+print array
+
+class QuickSort:
+    def sort(self):
+        print "hellp"

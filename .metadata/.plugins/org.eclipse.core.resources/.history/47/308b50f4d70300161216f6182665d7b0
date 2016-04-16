@@ -1,0 +1,85 @@
+import xml.etree.ElementTree as et
+    
+
+class QuickSort:
+    def __init__(self):
+        self.array = self.parser()
+    
+    def qsort(self,left,right):
+        if left<right:
+            splitPoint = self.partition(left, right) 
+            print splitPoint       
+            #introduce concurrency here
+            #self.qsort(left, splitPoint-1)
+            #self.qsort(splitPoint+1, right)
+        
+        
+    def parser(self):
+        #parsing from the xml file
+        tree = et.parse("array.xml")
+        root = tree.getroot()
+        array = []
+               
+        for child in root:
+            array.append(int(child.text))
+        
+        return array
+    
+    def swap(self,index1, index2):
+        temp = self.array[index1]
+        self.array[index1] = self.array[index2]
+        self.array[index2] = temp
+    
+    def partition(self, left, right):
+            
+        '''taking middle element as pivot
+        can also be the first, the last or 
+        the median of first, last and middle'''
+        
+        '''for pivot = array[left]
+        leftmark = left+1
+        rightmark = right
+        
+        for pivot = array[right]
+        leftmark = left
+        rightmark = right - 1
+        ''' 
+        pivotvalue = self.array[left]
+        leftmark = left+1
+        rightmark = right
+
+        done = False
+        while not done:
+            while leftmark <= rightmark and alist[leftmark] <= pivotvalue:
+                leftmark = leftmark + 1
+                
+            while alist[rightmark] >= pivotvalue and rightmark >= leftmark:
+                rightmark = rightmark -1
+
+         if rightmark < leftmark:
+             done = True
+         else:
+             temp = alist[leftmark]
+             alist[leftmark] = alist[rightmark]
+             alist[rightmark] = temp
+
+     temp = alist[first]
+     alist[first] = alist[rightmark]
+     alist[rightmark] = temp
+
+
+     return rightmark
+        
+            
+            
+        
+qsort = QuickSort()
+print qsort.array
+qsort.qsort(0, len(qsort.array)-1)
+       
+            
+        
+        
+        
+    
+    

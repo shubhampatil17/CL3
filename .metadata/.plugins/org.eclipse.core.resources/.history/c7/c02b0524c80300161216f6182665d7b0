@@ -1,0 +1,25 @@
+import xml.etree.ElementTree as et
+    
+
+class QuickSort:
+    def __init__(self):
+        self.array = self.parser()
+    
+    def qsort(self,left,right):
+        if left<right:
+            splitPoint = 
+        
+    def parser(self):
+        tree = et.parse("array.xml")
+        root = tree.getroot()
+        array = []
+               
+        for child in root:
+            array.append(int(child.text))
+
+        return array
+    
+    def partition(self, left, right):
+        
+    
+    

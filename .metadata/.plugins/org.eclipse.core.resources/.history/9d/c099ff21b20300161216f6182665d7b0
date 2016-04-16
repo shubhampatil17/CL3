@@ -1,0 +1,4 @@
+import xml.etree.ElementTree as et
+
+tree = et.parse("array.xml")
+print tree

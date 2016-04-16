@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;A2-Quick Sort/array.xml&apos; to &apos;positiveInput.xml&apos;" description="Rename resource &apos;array.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="array.xml" name="positiveInput.xml" stamp="1460818557828" updateReferences="true"/>
+</session>
