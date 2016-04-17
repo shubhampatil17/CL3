@@ -18,7 +18,8 @@ class Testing(unittest.TestCase):
 		submitBtn = self.driver.find_element_by_id("submitBtn")
 
 		inputText.clear()
-		inputText.send_keys("This is a plagiarism detector")
+		inputText.send_keys(
+			"This problem is also arising with different entities like persons or companies. This article plays around with fuzzywuzzy, a Python library for Fuzzy String Matching. This is my plagiarism detector algorithm.")
 		submitBtn.click()
 
 		self.assertIn("Test Completed",self.driver.page_source)
