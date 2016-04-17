@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="28" version="2.0">
+<workbench progressCount="12" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1024" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -20,8 +20,8 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -30,10 +30,31 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="8queens.py" partName="8queens" path="/home/shubham/workspace/A7-8Queens/8queens.py" title="8queens" tooltip="A7-8Queens/8queens.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/A7-8Queens/8queens.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="685" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="positivematrix.xml" partName="positivematrix.xml" path="/home/shubham/workspace/A7-8Queens/positivematrix.xml" title="positivematrix.xml" tooltip="A7-8Queens/positivematrix.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/A7-8Queens/positivematrix.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1106" selectionOffset="0" selectionTopPixel="898"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="negativematrix.xml" partName="negativematrix.xml" path="/home/shubham/workspace/A7-8Queens/negativematrix.xml" title="negativematrix.xml" tooltip="A7-8Queens/negativematrix.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/A7-8Queens/negativematrix.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="200" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="negativematrix2.xml" partName="negativematrix2.xml" path="/home/shubham/workspace/A7-8Queens/negativematrix2.xml" title="negativematrix2.xml" tooltip="A7-8Queens/negativematrix2.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/A7-8Queens/negativematrix2.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="24" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
@@ -41,7 +62,8 @@
 </view>
 <view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
-<selected IMemento.internal.id="/home/shubham/workspace/A1-BinarySearch"/>
+<expanded IMemento.internal.id="/home/shubham/workspace/A7-8Queens"/>
+<selected IMemento.internal.id="/home/shubham/workspace/A7-8Queens/negativematrix2.xml"/>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
@@ -51,7 +73,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 </views>
-<perspectives activePart="org.python.pydev.navigator.view" activePerspective="org.python.pydev.ui.PythonPerspective">
+<perspectives activePart="org.python.pydev.editor.PythonEditor" activePerspective="org.python.pydev.ui.PythonPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -178,7 +200,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@2ee095c9" ratio="0.5873016" ratioLeft="666" ratioRight="468" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2ee095c9" ratio="0.6719577" ratioLeft="762" ratioRight="372" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -191,12 +213,115 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/A7-8Queens/8queens.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/A7-8Queens/positivematrix.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/A7-8Queens/negativematrix.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/A7-8Queens/negativematrix2.xml"/>
+</editors>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="4876" y="0"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="4429" y="0"/>
+</item>
+<item historyLabel="positivematrix.xml" index="1">
+<position info="not_deleted" x="1106" y="0"/>
+</item>
+<item historyLabel="negativematrix.xml" index="2">
+<position info="not_deleted" x="200" y="0"/>
+</item>
+<item historyLabel="positivematrix.xml" index="1">
+<position info="not_deleted" x="1106" y="0"/>
+</item>
+<item historyLabel="negativematrix.xml" index="2">
+<position info="not_deleted" x="200" y="0"/>
+</item>
+<item historyLabel="positivematrix.xml" index="1">
+<position info="not_deleted" x="1106" y="0"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="positivematrix.xml" index="1">
+<position info="not_deleted" x="1106" y="0"/>
+</item>
+<item historyLabel="negativematrix.xml" index="2">
+<position info="not_deleted" x="200" y="0"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="positivematrix.xml" index="1">
+<position info="not_deleted" x="1106" y="0"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="3843" y="0"/>
+</item>
+<item historyLabel="positivematrix.xml" index="1">
+<position info="not_deleted" x="1106" y="0"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="3843" y="0"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="4378" y="0"/>
+</item>
+<item historyLabel="negativematrix2.xml" index="3">
+<position info="not_deleted" x="1106" y="0"/>
+</item>
+<item historyLabel="positivematrix.xml" index="1">
+<position info="not_deleted" x="0" y="1106"/>
+</item>
+<item historyLabel="negativematrix2.xml" index="3">
+<position info="not_deleted" x="24" y="0"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position/>
+</item>
+<item historyLabel="negativematrix2.xml" index="3">
+<position info="not_deleted" x="24" y="0"/>
+</item>
+<item historyLabel="positivematrix.xml" index="1">
+<position info="not_deleted" x="0" y="1106"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="4596" y="0"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="4678" y="0"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="4680" y="0"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="4826" y="0"/>
+</item>
+<item historyLabel="8queens" index="0">
+<position info="not_deleted" x="4797" y="0"/>
+</item>
+<item historyLabel="negativematrix.xml" index="2">
+<position info="not_deleted" x="200" y="0"/>
+</item>
+<item historyLabel="positivematrix.xml" index="1">
+<position info="not_deleted" x="0" y="1106"/>
+</item>
+<item active="true" historyLabel="8queens" index="0">
+<position info="not_deleted" x="4797" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@2ee095c9"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -207,5 +332,18 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="negativematrix2.xml" tooltip="A7-8Queens/negativematrix2.xml">
+<persistable path="/A7-8Queens/negativematrix2.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="negativematrix.xml" tooltip="A7-8Queens/negativematrix.xml">
+<persistable path="/A7-8Queens/negativematrix.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="positivematrix.xml" tooltip="A7-8Queens/positivematrix.xml">
+<persistable path="/A7-8Queens/positivematrix.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="8queens.py" tooltip="A7-8Queens/8queens.py">
+<persistable path="/A7-8Queens/8queens.py"/>
+</file>
+</mruList>
 </workbench>
